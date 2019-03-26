@@ -10,6 +10,7 @@
 			<random>
 				<li>Olá, como posso ajudar?</li>
 				<li>Olá, em que posso ajudar?</li>
+				<li>Olá, como voce quer ser ajudado? </li>
 			</random>
 	  </template>
 	</category>
