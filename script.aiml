@@ -8,14 +8,9 @@
       <template>
 			<think><set name="topic">START</set></think>
 			<random>
-<<<<<<< HEAD
 				<li>Ol·, como posso ajudar?</li>
 				<li>Ol·, em que posso ajudar?</li>
 				<li>Ol·, como voce quer ser ajudado? </li>
-=======
-				<li>Ol√° Insurtech, como posso ajudar?</li>
-				<li>Ol√°, em que posso ajudar?</li>
->>>>>>> 5a114d247217dc13c5850f2f42859aa1e7dc6747
 			</random>
 	  </template>
 	</category>
