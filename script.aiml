@@ -10,7 +10,7 @@
 			<random>
 				<li>Ol�, como posso ajudar?</li>
 				<li>Ol�, em que posso ajudar?</li>
-				<li>Ol�, como voce quer ser ajudado? </li>
+				<li>Ol�, como voce quer ser ajudado? </li> 
 			</random>
 	  </template>
 	</category>
@@ -34,7 +34,7 @@
 		<template>			
 			Aqui estão alguns número de emergência que você pode usar:\n
 			
-			Polícia Militar - 190\n
+			Polícia Militar - 199\n
 			Polícia Rodoviária Federal - 191\n
 			SAMU - 192\n
 			Corpo de Bombeiros - 193\n
