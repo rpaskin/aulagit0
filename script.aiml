@@ -8,7 +8,7 @@
       <template>
 			<think><set name="topic">START</set></think>
 			<random>
-				<li>Olá, como posso ajudar?</li>
+				<li>Olá Insurtech, como posso ajudar?</li>
 				<li>Olá, em que posso ajudar?</li>
 			</random>
 	  </template>
