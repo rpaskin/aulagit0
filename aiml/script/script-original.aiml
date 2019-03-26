@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="Latin-1"?>
+<aiml version="1.0.1">
+
+
+
+	<category>
+		<pattern>START</pattern>
+      <template>
+			<think><set name="topic">START</set></think>
+			<random>
+				<li>Olá, como posso ajudar?</li>
+				<li>Olá, em que posso ajudar?</li>
+			</random>
+	  </template>
+	</category>
+
+	
+<topic name = "START">
+    <category>
+        <pattern>*</pattern>
+            <template><random>
+                <li>Desculpe, não entendi.</li>
+                <li>Me desculpe, não estou entendendo. Permita-me ajudar:\n
+					- Se deseja marcar um churrasco diga diga "churrasco".\n
+				</li>
+            </random></template>
+    </category>
+</topic>	
+
+	
+	<category>
+		<pattern>ACIDENTE</pattern>
+		<template>			
+			Aqui estão alguns números que você pode contatar:\n
+			Celular: 991674848
+			Fixo: 31540106
+			
+			Ou você pode clicar para marcar um churrasco.
+			#button#marcar um churrascosss
+		</template>
+	</category>
