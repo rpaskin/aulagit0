@@ -8,9 +8,14 @@
       <template>
 			<think><set name="topic">START</set></think>
 			<random>
+<<<<<<< HEAD
 				<li>Ol·, como posso ajudar?</li>
 				<li>Ol·, em que posso ajudar?</li>
 				<li>Ol·, como voce quer ser ajudado? </li>
+=======
+				<li>Ol√° Insurtech, como posso ajudar?</li>
+				<li>Ol√°, em que posso ajudar?</li>
+>>>>>>> 5a114d247217dc13c5850f2f42859aa1e7dc6747
 			</random>
 	  </template>
 	</category>
@@ -20,8 +25,8 @@
     <category>
         <pattern>*</pattern>
             <template><random>
-                <li>Desculpe, n„o entendi.</li>
-                <li>Me desculpe, n„o estou entendendo. Permita-me ajudar:\n
+                <li>Desculpe, n√£o entendi.</li>
+                <li>Me desculpe, n√£o estou entendendo. Permita-me ajudar:\n
 					- Se deseja registrar um acidente diga "acidente".\n
 				</li>
             </random></template>
@@ -32,19 +37,19 @@
 	<category>
 		<pattern>ACIDENTE</pattern>
 		<template>			
-			Aqui est„o alguns n˙mero de emergÍncia que vocÍ pode usar:\n
+			Aqui est√£o alguns n√∫mero de emerg√™ncia que voc√™ pode usar:\n
 			
-			PolÌcia Militar - 190\n
-			PolÌcia Rodovi·ria Federal - 191\n
+			Pol√≠cia Militar - 190\n
+			Pol√≠cia Rodovi√°ria Federal - 191\n
 			SAMU - 192\n
 			Corpo de Bombeiros - 193\n
-			PolÌcia Federal - 194\n
-			PolÌcia Civil -197\n
-			PolÌcia Rodovi·ria Estadual - 198\n
+			Pol√≠cia Federal - 194\n
+			Pol√≠cia Civil -197\n
+			Pol√≠cia Rodovi√°ria Estadual - 198\n
 			Defesa Civil - 199\n
 			LAMSA - +55 800 024 2355\n\n
 			
-			Ou vocÍ pode registrar um acidente.
+			Ou voc√™ pode registrar um acidente.
 			#button#Registrar um acidente
 		</template>
 	</category>
@@ -56,7 +61,7 @@
 	</category>
 	
 	<category>
-		<pattern>N√O</pattern>
+		<pattern>N√ÉO</pattern>
 		<that>DESEJA REGISTRAR UM ACIDENTE</that>
 		<template>
 
@@ -94,7 +99,7 @@
 				<set name = "topic">registro</set>
 			</think>
 			Ok, houveram mortos?
-			#button#Sim;N„o;N„o Sei
+			#button#Sim;N√£o;N√£o Sei
 		</template>
 	</category>
 	
@@ -143,7 +148,7 @@
 		</category>
 		
 		<category>
-			<pattern>N√O</pattern>
+			<pattern>N√ÉO</pattern>
 			<that>OK HOUVERAM MORTOS _</that>
 			<template>
 				<think><set name = "nmortos">0</set></think>					
@@ -152,7 +157,7 @@
 		</category>
 		
 		<category>
-			<pattern>N√O SEI</pattern>
+			<pattern>N√ÉO SEI</pattern>
 			<that>OK HOUVERAM MORTOS _</that>
 			<template>					
 				E quantos feridos?
@@ -174,8 +179,8 @@
 			<that>E QUANTOS FERIDOS</that>
 			<template>
 				<think><set name = "nferidos">0</set></think>
-				Certo, e vocÍ pode descrever o tipo do acidente?
-				#button#Colis„o traseira;Colis„o frontal;Colis„o lateral mesmo sentido;Colis„o lateral sentido oposto;Atropelamento;Capotagem;Outro;
+				Certo, e voc√™ pode descrever o tipo do acidente?
+				#button#Colis√£o traseira;Colis√£o frontal;Colis√£o lateral mesmo sentido;Colis√£o lateral sentido oposto;Atropelamento;Capotagem;Outro;
 			</template>
 		</category>
 		
@@ -184,35 +189,35 @@
 			<that>E QUANTOS FERIDOS</that>
 			<template>
 				<think><set name = "nferidos"><star/></set></think>
-				Certo, e vocÍ pode descrever o tipo do acidente?
-				#button#Colis„o traseira;Colis„o frontal;Colis„o lateral mesmo sentido;Colis„o lateral sentido oposto;Atropelamento;Capotagem;Outro;
+				Certo, e voc√™ pode descrever o tipo do acidente?
+				#button#Colis√£o traseira;Colis√£o frontal;Colis√£o lateral mesmo sentido;Colis√£o lateral sentido oposto;Atropelamento;Capotagem;Outro;
 			</template>
 		</category>
 		
 		<category>
-			<pattern>N√O</pattern>
-			<that>CERTO E VOC  PODE DESCREVER O TIPO DO ACIDENTE _</that>
-			<template>Ok, pode me dizer qual È a empresa do Ùnibus?</template>
+			<pattern>N√ÉO</pattern>
+			<that>CERTO E VOC√ä PODE DESCREVER O TIPO DO ACIDENTE _</that>
+			<template>Ok, pode me dizer qual √© a empresa do √¥nibus?</template>
 		</category>
 		
 		<category>
-			<pattern>N√O SEI</pattern>
-			<that>CERTO E VOC  PODE DESCREVER O TIPO DO ACIDENTE _</that>
-			<template><srai>N√O</srai></template>
+			<pattern>N√ÉO SEI</pattern>
+			<that>CERTO E VOC√ä PODE DESCREVER O TIPO DO ACIDENTE _</that>
+			<template><srai>N√ÉO</srai></template>
 		</category>
 		
 		<category>
 			<pattern>OUTRO</pattern>
-			<that>CERTO E VOC  PODE DESCREVER O TIPO DO ACIDENTE _</that>
+			<that>CERTO E VOC√ä PODE DESCREVER O TIPO DO ACIDENTE _</that>
 			<template>Como foi o acidente?</template>
 		</category>
 		
 		<category>
 			<pattern>*</pattern>
-			<that>CERTO E VOC  PODE DESCREVER O TIPO DO ACIDENTE _</that>
+			<that>CERTO E VOC√ä PODE DESCREVER O TIPO DO ACIDENTE _</that>
 			<template>
 				<think><set name = "tipo_acidente"><star/></set></think>
-				Ok, pode me dizer qual È a empresa do Ùnibus?
+				Ok, pode me dizer qual √© a empresa do √¥nibus?
 			</template>
 		</category>
 		
@@ -221,16 +226,16 @@
 			<that>COMO FOI O ACIDENTE</that>
 			<template>
 				<think><set name = "tipo_acidente"><star/></set></think>
-				Ok, pode me dizer qual È a empresa do Ùnibus?
+				Ok, pode me dizer qual √© a empresa do √¥nibus?
 			</template>
 		</category>
 				
 		<category>
 			<pattern>*</pattern>
-			<that>OK PODE ME DIZER QUAL … A EMPRESA DO ‘NIBUS</that>
+			<that>OK PODE ME DIZER QUAL √â A EMPRESA DO √îNIBUS</that>
 			<template>
 				<think><set name = "empresa"><star/></set></think>
-				VocÍ sabe se era um Ùnibus de fretamento ou uma linha regular?
+				Voc√™ sabe se era um √¥nibus de fretamento ou uma linha regular?
 				#button#Fretamento;Linha Regular
 			</template>
 		</category>
@@ -238,176 +243,176 @@
 		
 		<category>
 			<pattern>FRETAMENTO</pattern>
-			<that>VOC  SABE SE ERA UM ‘NIBUS DE FRETAMENTO OU UMA LINHA REGULAR _</that>
+			<that>VOC√ä SABE SE ERA UM √îNIBUS DE FRETAMENTO OU UMA LINHA REGULAR _</that>
 			<template>
 				<think>
 					<set name = "tipo">Fretamento</set>
 					<set name = "topic">location</set>
 				</think>
-				Certo, por favor me informe o estado no qual ocorreu o acidente, ou vocÍ pode me mandar sua localizaÁ„o.
+				Certo, por favor me informe o estado no qual ocorreu o acidente, ou voc√™ pode me mandar sua localiza√ß√£o.
 			</template>
 		</category>
 
 		<category>
 			<pattern>_ FRETAMENTO</pattern>
-			<that>VOC  SABE SE ERA UM ‘NIBUS DE FRETAMENTO OU UMA LINHA REGULAR _</that>
+			<that>VOC√ä SABE SE ERA UM √îNIBUS DE FRETAMENTO OU UMA LINHA REGULAR _</that>
 			<template><srai>FRETAMENTO</srai></template>
 		</category>
 
 		<category>
 			<pattern>FRETAMENTO _</pattern>
-			<that>VOC  SABE SE ERA UM ‘NIBUS DE FRETAMENTO OU UMA LINHA REGULAR _</that>
+			<that>VOC√ä SABE SE ERA UM √îNIBUS DE FRETAMENTO OU UMA LINHA REGULAR _</that>
 			<template><srai>FRETAMENTO</srai></template>
 		</category>
 
 		<category>
 			<pattern>_ FRETAMENTO _</pattern>
-			<that>VOC  SABE SE ERA UM ‘NIBUS DE FRETAMENTO OU UMA LINHA REGULAR _</that>
+			<that>VOC√ä SABE SE ERA UM √îNIBUS DE FRETAMENTO OU UMA LINHA REGULAR _</that>
 			<template><srai>FRETAMENTO</srai></template>
 		</category>
 		
 		<category>
 			<pattern>FRETAMENTO</pattern>
-			<that>N√O ENTENDI PODE REPETIR</that>
+			<that>N√ÉO ENTENDI PODE REPETIR</that>
 			<template>
 				<think>
 					<set name = "tipo">Fretamento</set>
 					<set name = "topic">location</set>
 				</think>
-				Certo, por favor me informe o estado no qual ocorreu o acidente, ou vocÍ pode me mandar sua localizaÁ„o.
+				Certo, por favor me informe o estado no qual ocorreu o acidente, ou voc√™ pode me mandar sua localiza√ß√£o.
 			</template>
 		</category>
 		
 		<category>
 			<pattern>_ FRETAMENTO</pattern>
-			<that>N√O ENTENDI PODE REPETIR</that>
+			<that>N√ÉO ENTENDI PODE REPETIR</that>
 			<template><srai>FRETAMENTO</srai></template>
 		</category>
 
 		<category>
 			<pattern>FRETAMENTO _</pattern>
-			<that>N√O ENTENDI PODE REPETIR</that>
+			<that>N√ÉO ENTENDI PODE REPETIR</that>
 			<template><srai>FRETAMENTO</srai></template>
 		</category>
 
 		<category>
 			<pattern>_ FRETAMENTO _</pattern>
-			<that>N√O ENTENDI PODE REPETIR</that>
+			<that>N√ÉO ENTENDI PODE REPETIR</that>
 			<template><srai>FRETAMENTO</srai></template>
 		</category>
 
 		<category>
 			<pattern>LINHA REGULAR</pattern>
-			<that>VOC  SABE SE ERA UM ‘NIBUS DE FRETAMENTO OU UMA LINHA REGULAR _</that>
+			<that>VOC√ä SABE SE ERA UM √îNIBUS DE FRETAMENTO OU UMA LINHA REGULAR _</that>
 			<template>
 				<think>
 					<set name = "tipo">Linha regular</set>
 					<set name = "topic">location</set>
 				</think>
-				Certo, por favor me informe o estado no qual ocorreu o acidente, ou vocÍ pode me mandar sua localizaÁ„o.
+				Certo, por favor me informe o estado no qual ocorreu o acidente, ou voc√™ pode me mandar sua localiza√ß√£o.
 			</template>
 		</category>
 		
 		<category>
 			<pattern>_ LINHA REGULAR</pattern>
-			<that>VOC  SABE SE ERA UM ‘NIBUS DE FRETAMENTO OU UMA LINHA REGULAR</that>
+			<that>VOC√ä SABE SE ERA UM √îNIBUS DE FRETAMENTO OU UMA LINHA REGULAR</that>
 			<template><srai>LINHA REGULAR</srai></template>
 		</category>
 
 		<category>
 			<pattern>LINHA REGULAR _</pattern>
-			<that>VOC  SABE SE ERA UM ‘NIBUS DE FRETAMENTO OU UMA LINHA REGULAR</that>
+			<that>VOC√ä SABE SE ERA UM √îNIBUS DE FRETAMENTO OU UMA LINHA REGULAR</that>
 			<template><srai>LINHA REGULAR</srai></template>
 		</category>
 
 		<category>
 			<pattern>_ LINHA REGULAR _</pattern>
-			<that>VOC  SABE SE ERA UM ‘NIBUS DE FRETAMENTO OU UMA LINHA REGULAR</that>
+			<that>VOC√ä SABE SE ERA UM √îNIBUS DE FRETAMENTO OU UMA LINHA REGULAR</that>
 			<template><srai>LINHA REGULAR</srai></template>
 		</category>
 
 		<category>
 			<pattern>REGULAR</pattern>
-			<that>VOC  SABE SE ERA UM ‘NIBUS DE FRETAMENTO OU UMA LINHA REGULAR</that>
+			<that>VOC√ä SABE SE ERA UM √îNIBUS DE FRETAMENTO OU UMA LINHA REGULAR</that>
 			<template><srai>LINHA REGULAR</srai></template>
 		</category>
 
 		<category>
 			<pattern>_ REGULAR</pattern>
-			<that>VOC  SABE SE ERA UM ‘NIBUS DE FRETAMENTO OU UMA LINHA REGULAR</that>
+			<that>VOC√ä SABE SE ERA UM √îNIBUS DE FRETAMENTO OU UMA LINHA REGULAR</that>
 			<template><srai>LINHA REGULAR</srai></template>
 		</category>
 
 		<category>
 			<pattern>REGULAR _</pattern>
-			<that>VOC  SABE SE ERA UM ‘NIBUS DE FRETAMENTO OU UMA LINHA REGULAR</that>
+			<that>VOC√ä SABE SE ERA UM √îNIBUS DE FRETAMENTO OU UMA LINHA REGULAR</that>
 			<template><srai>LINHA REGULAR</srai></template>
 		</category>
 
 		<category>
 			<pattern>_ REGULAR _</pattern>
-			<that>VOC  SABE SE ERA UM ‘NIBUS DE FRETAMENTO OU UMA LINHA REGULAR</that>
+			<that>VOC√ä SABE SE ERA UM √îNIBUS DE FRETAMENTO OU UMA LINHA REGULAR</that>
 			<template><srai>LINHA REGULAR</srai></template>
 		</category>
 		
 		<category>
 			<pattern>LINHA REGULAR</pattern>
-			<that>N√O ENTENDI PODE REPETIR</that>
+			<that>N√ÉO ENTENDI PODE REPETIR</that>
 			<template>
 				<think>
 					<set name = "tipo">Linha regular</set>
 					<set name = "topic">location</set>
 				</think>
-				Certo, por favor me informe o estado no qual ocorreu o acidente, ou vocÍ pode me mandar sua localizaÁ„o.
+				Certo, por favor me informe o estado no qual ocorreu o acidente, ou voc√™ pode me mandar sua localiza√ß√£o.
 			</template>
 		</category>		
 
 		<category>
 			<pattern>_ LINHA REGULAR</pattern>
-			<that>N√O ENTENDI PODE REPETIR</that>
+			<that>N√ÉO ENTENDI PODE REPETIR</that>
 			<template><srai>LINHA REGULAR</srai></template>
 		</category>
 
 		<category>
 			<pattern>LINHA REGULAR _</pattern>
-			<that>N√O ENTENDI PODE REPETIR</that>
+			<that>N√ÉO ENTENDI PODE REPETIR</that>
 			<template><srai>LINHA REGULAR</srai></template>
 		</category>
 
 		<category>
 			<pattern>_ LINHA REGULAR _</pattern>
-			<that>N√O ENTENDI PODE REPETIR</that>
+			<that>N√ÉO ENTENDI PODE REPETIR</that>
 			<template><srai>LINHA REGULAR</srai></template>
 		</category>
 
 		<category>
 			<pattern>_ REGULAR _</pattern>
-			<that>N√O ENTENDI PODE REPETIR</that>
+			<that>N√ÉO ENTENDI PODE REPETIR</that>
 			<template><srai>LINHA REGULAR</srai></template>
 		</category>
 		
 		<category>
 			<pattern>_ REGULAR</pattern>
-			<that>N√O ENTENDI PODE REPETIR</that>
+			<that>N√ÉO ENTENDI PODE REPETIR</that>
 			<template><srai>LINHA REGULAR</srai></template>
 		</category>		
 
 		<category>
 			<pattern>REGULAR _</pattern>
-			<that>N√O ENTENDI PODE REPETIR</that>
+			<that>N√ÉO ENTENDI PODE REPETIR</that>
 			<template><srai>LINHA REGULAR</srai></template>
 		</category>
 		
 		<category>
 			<pattern>*</pattern>
-			<that>VOC  SABE SE ERA UM ‘NIBUS DE FRETAMENTO OU UMA LINHA REGULAR _</that>
-			<template>N„o entendi, pode repetir?</template>
+			<that>VOC√ä SABE SE ERA UM √îNIBUS DE FRETAMENTO OU UMA LINHA REGULAR _</that>
+			<template>N√£o entendi, pode repetir?</template>
 		</category>
 		
 		<category>
 			<pattern>*</pattern>
-			<that>N√O ENTENDI PODE REPETIR</that>
-			<template>N„o entendi, pode repetir?</template>
+			<that>N√ÉO ENTENDI PODE REPETIR</that>
+			<template>N√£o entendi, pode repetir?</template>
 		</category>
 		
 		<category>
@@ -438,7 +443,7 @@
 			<pattern>CIDADE</pattern>
 			<that>FOI DENTRO DA CIDADE OU EM UMA RODOVIA _</that>
 			<template><think><set name = "local">Cidade</set></think>
-				Ok, gostaria de falar sobre outros detalhes que ache importante? Sen„o podemos finalizar.
+				Ok, gostaria de falar sobre outros detalhes que ache importante? Sen√£o podemos finalizar.
 				#button#Sim;Finalizar
 			</template>
 		</category>
@@ -469,7 +474,7 @@
 					<set name = "local">Rodovia</set>
 					<set name = "topic">rodovia</set>
 				</think>
-				Qual o nome / cÛdigo da rodovia?
+				Qual o nome / c√≥digo da rodovia?
 			</template>
 		</category>
 	 
@@ -493,71 +498,71 @@
 		
 		<category>
 			<pattern>CIDADE</pattern>
-			<that>ACHO QUE EU N√O ENTENDI PODERIA REPETIR</that>
+			<that>ACHO QUE EU N√ÉO ENTENDI PODERIA REPETIR</that>
 			<template><think><set name = "local">Cidade</set></think>
-				Ok, gostaria de falar sobre outros detalhes que ache importante? Sen„o podemos finalizar.
+				Ok, gostaria de falar sobre outros detalhes que ache importante? Sen√£o podemos finalizar.
 				#button#Sim;Finalizar
 			</template>
 		</category>
 		
 		<category>
 			<pattern>_ CIDADE _</pattern>
-			<that>ACHO QUE EU N√O ENTENDI PODERIA REPETIR</that>
+			<that>ACHO QUE EU N√ÉO ENTENDI PODERIA REPETIR</that>
 			<template><srai>CIDADE</srai></template>
 		</category>
 		
 		<category>
 			<pattern>_ CIDADE</pattern>
-			<that>ACHO QUE EU N√O ENTENDI PODERIA REPETIR</that>
+			<that>ACHO QUE EU N√ÉO ENTENDI PODERIA REPETIR</that>
 			<template><srai>CIDADE</srai></template>
 		</category>
 		
 		<category>
 			<pattern>CIDADE _</pattern>
-			<that>ACHO QUE EU N√O ENTENDI PODERIA REPETIR</that>
+			<that>ACHO QUE EU N√ÉO ENTENDI PODERIA REPETIR</that>
 			<template><srai>CIDADE</srai></template>
 		</category>
 	 
 	  	<category>
 			<pattern>RODOVIA</pattern>
-			<that>ACHO QUE EU N√O ENTENDI PODERIA REPETIR</that>
+			<that>ACHO QUE EU N√ÉO ENTENDI PODERIA REPETIR</that>
 			<template>
 				<think>
 					<set name = "local">Rodovia</set>
 					<set name = "topic">rodovia</set>
 				</think>
-				Qual o nome / cÛdigo da rodovia?
+				Qual o nome / c√≥digo da rodovia?
 			</template>
 		</category>
 	 
 	 	<category>
 			<pattern>_ RODOVIA _</pattern>
-			<that>ACHO QUE EU N√O ENTENDI PODERIA REPETIR</that>
+			<that>ACHO QUE EU N√ÉO ENTENDI PODERIA REPETIR</that>
 			<template><srai>RODOVIA</srai></template>
 		</category>
 		
 		<category>
 			<pattern>_ RODOVIA</pattern>
-			<that>ACHO QUE EU N√O ENTENDI PODERIA REPETIR</that>
+			<that>ACHO QUE EU N√ÉO ENTENDI PODERIA REPETIR</that>
 			<template><srai>RODOVIA</srai></template>
 		</category>
 		
 		<category>
 			<pattern>RODOVIA _</pattern>
-			<that>ACHO QUE EU N√O ENTENDI PODERIA REPETIR</that>
+			<that>ACHO QUE EU N√ÉO ENTENDI PODERIA REPETIR</that>
 			<template><srai>RODOVIA</srai></template>
 		</category>		
 		
 		<category>
 			<pattern>*</pattern>
 			<that>FOI DENTRO DA CIDADE OU EM UMA RODOVIA</that>
-			<template>Acho que eu n„o entendi, poderia repetir?</template>
+			<template>Acho que eu n√£o entendi, poderia repetir?</template>
 		</category>
 			
 		<category>
 			<pattern>*</pattern>
-			<that>ACHO QUE EU N√O ENTENDI PODERIA REPETIR</that>
-			<template>Acho que eu n„o entendi, poderia repetir?</template>
+			<that>ACHO QUE EU N√ÉO ENTENDI PODERIA REPETIR</that>
+			<template>Acho que eu n√£o entendi, poderia repetir?</template>
 		</category>
 	
 	</topic>
@@ -568,13 +573,13 @@
  			<template>
  				<think><set name = "topic">rodovia</set></think>
  				A rua estava pavimentada?
- 				#button#Sim;N„o;N„o Sei
+ 				#button#Sim;N√£o;N√£o Sei
  			</template>
  		</category>
  		
  		<category>
 			<pattern>FOI EM *</pattern>
-			<that>CERTO POR FAVOR ME INFORME O ESTADO NO QUAL OCORREU O ACIDENTE OU VOC  PODE ME MANDAR SUA LOCALIZA«√O</that>
+			<that>CERTO POR FAVOR ME INFORME O ESTADO NO QUAL OCORREU O ACIDENTE OU VOC√ä PODE ME MANDAR SUA LOCALIZA√á√ÉO</that>
 			<template>
 				<think>
 					<set name = "estado"><star/></set>
@@ -586,13 +591,13 @@
 		
 		<category>
 			<pattern>*</pattern>
-			<that>CERTO POR FAVOR ME INFORME O ESTADO NO QUAL OCORREU O ACIDENTE OU VOC  PODE ME MANDAR SUA LOCALIZA«√O</that>
+			<that>CERTO POR FAVOR ME INFORME O ESTADO NO QUAL OCORREU O ACIDENTE OU VOC√ä PODE ME MANDAR SUA LOCALIZA√á√ÉO</that>
 			<template><srai>FOI EM <star/></srai></template>
 		</category>
 	
 		<category>
 			<pattern>FOI NO *</pattern>
-			<that>CERTO POR FAVOR ME INFORME O ESTADO NO QUAL OCORREU O ACIDENTE OU VOC  PODE ME MANDAR SUA LOCALIZA«√O</that>
+			<that>CERTO POR FAVOR ME INFORME O ESTADO NO QUAL OCORREU O ACIDENTE OU VOC√ä PODE ME MANDAR SUA LOCALIZA√á√ÉO</that>
 			<template><srai>FOI EM <star/></srai></template>
 		</category>
  		
@@ -601,23 +606,23 @@
 	<topic name = "RODOVIA">
 	
 		<category>
-			<pattern>N√O SEI</pattern>
-			<that>QUAL O NOME C”DIGO DA RODOVIA</that>
+			<pattern>N√ÉO SEI</pattern>
+			<that>QUAL O NOME C√ìDIGO DA RODOVIA</that>
 			<template>
-				A rodovia È estadual ou federal?
+				A rodovia √© estadual ou federal?
 				#button#Estadual;Federal
 			</template>
 		</category>
 		
 		<category>
-			<pattern>_ N√O SEI</pattern>
-			<that>QUAL O NOME C”DIGO DA RODOVIA</that>
-			<template><srai>N√O SEI</srai></template>
+			<pattern>_ N√ÉO SEI</pattern>
+			<that>QUAL O NOME C√ìDIGO DA RODOVIA</that>
+			<template><srai>N√ÉO SEI</srai></template>
 		</category>
 		
 		<category>
 			<pattern>*</pattern>
-			<that>QUAL O NOME C”DIGO DA RODOVIA</that>
+			<that>QUAL O NOME C√ìDIGO DA RODOVIA</that>
 			<template>
 				<think><set name = "codigo"><star/></set></think>
 				Certo, e qual foi o Km da rodovia onde ocorreu o acidente?
@@ -626,7 +631,7 @@
 	
 		<category>
 			<pattern>ESTADUAL</pattern>
-			<that>A RODOVIA … ESTADUAL OU FEDERAL _</that>
+			<that>A RODOVIA √â ESTADUAL OU FEDERAL _</that>
 			<template>
 				<think><set name = "tipo_rodovia">Estadual</set></think>
 				Certo, e qual foi o Km da rodovia onde ocorreu o acidente?
@@ -635,25 +640,25 @@
 
 		<category>
 			<pattern>_ ESTADUAL</pattern>
-			<that>A RODOVIA … ESTADUAL OU FEDERAL _</that>
+			<that>A RODOVIA √â ESTADUAL OU FEDERAL _</that>
 			<template><srai>ESTADUAL</srai></template>
 		</category>		
 
 		<category>
 			<pattern>ESTADUAL _</pattern>
-			<that>A RODOVIA … ESTADUAL OU FEDERAL _</that>
+			<that>A RODOVIA √â ESTADUAL OU FEDERAL _</that>
 			<template><srai>ESTADUAL</srai></template>
 		</category>
 		
 		<category>
 			<pattern>_ ESTADUAL _</pattern>
-			<that>A RODOVIA … ESTADUAL OU FEDERAL _</that>
+			<that>A RODOVIA √â ESTADUAL OU FEDERAL _</that>
 			<template><srai>ESTADUAL</srai></template>
 		</category>		
 		
 		<category>
 			<pattern>FEDERAL</pattern>
-			<that>A RODOVIA … ESTADUAL OU FEDERAL _</that>
+			<that>A RODOVIA √â ESTADUAL OU FEDERAL _</that>
 			<template>
 				<think><set name = "tipo_rodovia">Federal</set></think>
 				Certo, e qual foi o Km da rodovia onde ocorreu o acidente?
@@ -662,39 +667,39 @@
 
 		<category>
 			<pattern>_ FEDERAL</pattern>
-			<that>A RODOVIA … ESTADUAL OU FEDERAL _</that>
+			<that>A RODOVIA √â ESTADUAL OU FEDERAL _</that>
 			<template><srai>FEDERAL</srai></template>
 		</category>		
 
 		<category>
 			<pattern>FEDERAL _</pattern>
-			<that>A RODOVIA … ESTADUAL OU FEDERAL _</that>
+			<that>A RODOVIA √â ESTADUAL OU FEDERAL _</that>
 			<template><srai>FEDERAL</srai></template>
 		</category>
 		
 		<category>
 			<pattern>_ FEDERAL _</pattern>
-			<that>A RODOVIA … ESTADUAL OU FEDERAL _</that>
+			<that>A RODOVIA √â ESTADUAL OU FEDERAL _</that>
 			<template><srai>FEDERAL</srai></template>
 		</category>					
 		
 		<category>
-			<pattern>N√O SEI</pattern>
-			<that>A RODOVIA … ESTADUAL OU FEDERAL _</that>
+			<pattern>N√ÉO SEI</pattern>
+			<that>A RODOVIA √â ESTADUAL OU FEDERAL _</that>
 			<template>
 				Certo, e qual foi o Km da rodovia onde ocorreu o acidente?
 			</template>
 		</category>
 		
 		<category>
-			<pattern> _ N√O SEI</pattern>
-			<that>A RODOVIA … ESTADUAL OU FEDERAL _</that>
-			<template><srai>N√O SEI</srai></template>
+			<pattern> _ N√ÉO SEI</pattern>
+			<that>A RODOVIA √â ESTADUAL OU FEDERAL _</that>
+			<template><srai>N√ÉO SEI</srai></template>
 		</category>				
 		
 		<category>
 			<pattern>ESTADUAL</pattern>
-			<that>N√O ESTOU ENTENDENDO</that>
+			<that>N√ÉO ESTOU ENTENDENDO</that>
 			<template>
 				<think><set name = "tipo_rodovia">Estadual</set></think>
 				Certo, e qual foi o Km da rodovia onde ocorreu o acidente?
@@ -703,25 +708,25 @@
 
 		<category>
 			<pattern>_ ESTADUAL</pattern>
-			<that>N√O ESTOU ENTENDENDO</that>
+			<that>N√ÉO ESTOU ENTENDENDO</that>
 			<template><srai>ESTADUAL</srai></template>
 		</category>		
 
 		<category>
 			<pattern>ESTADUAL _</pattern>
-			<that>N√O ESTOU ENTENDENDO</that>
+			<that>N√ÉO ESTOU ENTENDENDO</that>
 			<template><srai>ESTADUAL</srai></template>
 		</category>
 		
 		<category>
 			<pattern>_ ESTADUAL _</pattern>
-			<that>N√O ESTOU ENTENDENDO</that>
+			<that>N√ÉO ESTOU ENTENDENDO</that>
 			<template><srai>ESTADUAL</srai></template>
 		</category>		
 		
 		<category>
 			<pattern>FEDERAL</pattern>
-			<that>N√O ESTOU ENTENDENDO</that>
+			<that>N√ÉO ESTOU ENTENDENDO</that>
 			<template>
 				<think><set name = "tipo_rodovia">Federal</set></think>
 				Certo, e qual foi o Km da rodovia onde ocorreu o acidente?
@@ -730,46 +735,46 @@
 
 		<category>
 			<pattern>_ FEDERAL</pattern>
-			<that>N√O ESTOU ENTENDENDO</that>
+			<that>N√ÉO ESTOU ENTENDENDO</that>
 			<template><srai>FEDERAL</srai></template>
 		</category>		
 
 		<category>
 			<pattern>FEDERAL _</pattern>
-			<that>N√O ESTOU ENTENDENDO</that>
+			<that>N√ÉO ESTOU ENTENDENDO</that>
 			<template><srai>FEDERAL</srai></template>
 		</category>
 		
 		<category>
 			<pattern>_ FEDERAL _</pattern>
-			<that>N√O ESTOU ENTENDENDO</that>
+			<that>N√ÉO ESTOU ENTENDENDO</that>
 			<template><srai>FEDERAL</srai></template>
 		</category>					
 		
 		<category>
-			<pattern>N√O SEI</pattern>
-			<that>N√O ESTOU ENTENDENDO</that>
+			<pattern>N√ÉO SEI</pattern>
+			<that>N√ÉO ESTOU ENTENDENDO</that>
 			<template>
 				Certo, e qual foi o Km da rodovia onde ocorreu o acidente?
 			</template>
 		</category>
 		
 		<category>
-			<pattern> _ N√O SEI</pattern>
-			<that>N√O ESTOU ENTENDENDO</that>
-			<template><srai>N√O SEI</srai></template>
+			<pattern> _ N√ÉO SEI</pattern>
+			<that>N√ÉO ESTOU ENTENDENDO</that>
+			<template><srai>N√ÉO SEI</srai></template>
 		</category>			
 		
 		<category>
 			<pattern>*</pattern>
-			<that>A RODOVIA … ESTADUAL OU FEDERAL _</that>
-			<template>N„o estou entendendo</template>
+			<that>A RODOVIA √â ESTADUAL OU FEDERAL _</that>
+			<template>N√£o estou entendendo</template>
 		</category>
 			
 		<category>
 			<pattern>*</pattern>
-			<that>N√O ESTOU ENTENDENDO</that>
-			<template>N„o estou entendendo</template>
+			<that>N√ÉO ESTOU ENTENDENDO</that>
+			<template>N√£o estou entendendo</template>
 		</category>
 		
 		<category>
@@ -778,7 +783,7 @@
 			<template>
 				<think><set name = "km"><star/></set></think>
 				Ela estava pavimentada?
-				#button#Sim;N„o;N„o Sei
+				#button#Sim;N√£o;N√£o Sei
 			</template>
 		</category>
 		
@@ -802,17 +807,17 @@
 					<set name = "pavimentada">Sim</set>
 					<set name = "rota">Normal</set>
 				</think>
-				Certo, e quais eram as condiÁıes da pista? Haviam buracos, estava molhada, etc?
+				Certo, e quais eram as condi√ß√µes da pista? Haviam buracos, estava molhada, etc?
 			</template>
 		</category>
 		
 		<category>
-			<pattern>N√O</pattern>
+			<pattern>N√ÉO</pattern>
 			<that>ELA ESTAVA PAVIMENTADA _</that>
 			<template>
-				<think><set name = "pavimentada">N„o</set></think>
-				o Ùnibus pegou alguma rota alternativa?
-				#button#Sim;N„o;N„o Sei
+				<think><set name = "pavimentada">N√£o</set></think>
+				o √¥nibus pegou alguma rota alternativa?
+				#button#Sim;N√£o;N√£o Sei
 			</template>
 		</category>
 
@@ -824,35 +829,35 @@
 					<set name = "pavimentada">Sim</set>
 					<set name = "rota">Normal</set>
 				</think>
-				Certo, e quais eram as condiÁıes da pista? Haviam buracos, estava molhada, etc?
+				Certo, e quais eram as condi√ß√µes da pista? Haviam buracos, estava molhada, etc?
 			</template>
 		</category>
 		
 		<category>
-			<pattern>N√O</pattern>
+			<pattern>N√ÉO</pattern>
 			<that>PODE REPETIR</that>
 			<template>
-				<think><set name = "pavimentada">N„o</set></think>
-				o Ùnibus pegou alguma rota alternativa?
-				#button#Sim;N„o;N„o Sei
+				<think><set name = "pavimentada">N√£o</set></think>
+				o √¥nibus pegou alguma rota alternativa?
+				#button#Sim;N√£o;N√£o Sei
 			</template>
 		</category>
 
 		<category>
-			<pattern>N√O SEI</pattern>
+			<pattern>N√ÉO SEI</pattern>
 			<that>ELA ESTAVA PAVIMENTADA _</that>
 			<template>
-				o Ùnibus pegou alguma rota alternativa?
-				#button#Sim;N„o;N„o Sei
+				o √¥nibus pegou alguma rota alternativa?
+				#button#Sim;N√£o;N√£o Sei
 			</template>
 		</category>
 
 		<category>
-			<pattern>N√O SEI</pattern>
+			<pattern>N√ÉO SEI</pattern>
 			<that>PODE REPETIR</that>
 			<template>
-				o Ùnibus pegou alguma rota alternativa?
-				#button#Sim;N„o;N„o Sei
+				o √¥nibus pegou alguma rota alternativa?
+				#button#Sim;N√£o;N√£o Sei
 			</template>
 		</category>
 
@@ -867,27 +872,27 @@
 			<that>A RUA ESTAVA PAVIMENTADA _</that>
 			<template>
 				<think><set name = "pavimentada">Sim</set></think>
-				o Ùnibus pegou alguma rota alternativa?
-				#button#Sim;N„o;N„o Sei
+				o √¥nibus pegou alguma rota alternativa?
+				#button#Sim;N√£o;N√£o Sei
 			</template>
 		</category>
 		
 		<category>
-			<pattern>N√O</pattern>
+			<pattern>N√ÉO</pattern>
 			<that>A RUA ESTAVA PAVIMENTADA _</that>
 			<template>
-				<think><set name = "pavimentada">N„o</set></think>
-				o Ùnibus pegou alguma rota alternativa?
-				#button#Sim;N„o;N„o Sei
+				<think><set name = "pavimentada">N√£o</set></think>
+				o √¥nibus pegou alguma rota alternativa?
+				#button#Sim;N√£o;N√£o Sei
 			</template>
 		</category>
 
 		<category>
-			<pattern>N√O SEI</pattern>
+			<pattern>N√ÉO SEI</pattern>
 			<that>A RUA ESTAVA PAVIMENTADA _</that>
 			<template>
-				o Ùnibus pegou alguma rota alternativa?
-				#button#Sim;N„o;N„o Sei
+				o √¥nibus pegou alguma rota alternativa?
+				#button#Sim;N√£o;N√£o Sei
 			</template>
 		</category>
 
@@ -905,34 +910,34 @@
 			
 		<category>
 			<pattern>SIM</pattern>
-			<that>O ‘NIBUS PEGOU ALGUMA ROTA ALTERNATIVA _</that>
+			<that>O √îNIBUS PEGOU ALGUMA ROTA ALTERNATIVA _</that>
 			<template>
 				<think><set name = "rota">Desvio</set></think>
-				Certo, e quais eram as condiÁıes da pista? Haviam buracos, estava molhada, etc?
+				Certo, e quais eram as condi√ß√µes da pista? Haviam buracos, estava molhada, etc?
 			</template>
 		</category>		
 		
 		<category>
-			<pattern>N√O</pattern>
-			<that>O ‘NIBUS PEGOU ALGUMA ROTA ALTERNATIVA _</that>
+			<pattern>N√ÉO</pattern>
+			<that>O √îNIBUS PEGOU ALGUMA ROTA ALTERNATIVA _</that>
 			<template>
 				<think><set name = "rota">Normal</set></think>
-				Certo, e quais eram as condiÁıes da pista? Haviam buracos, estava molhada, etc?
+				Certo, e quais eram as condi√ß√µes da pista? Haviam buracos, estava molhada, etc?
 			</template>
 		</category>		
 		
 		<category>
-			<pattern>N√O SEI</pattern>
-			<that>O ‘NIBUS PEGOU ALGUMA ROTA ALTERNATIVA _</that>
+			<pattern>N√ÉO SEI</pattern>
+			<that>O √îNIBUS PEGOU ALGUMA ROTA ALTERNATIVA _</that>
 			<template>
-				Certo, e quais eram as condiÁıes da pista? Haviam buracos, estava molhada, etc?
+				Certo, e quais eram as condi√ß√µes da pista? Haviam buracos, estava molhada, etc?
 			</template>
 		</category>
 		
 		<category>
-			<pattern>_ N√O SEI</pattern>
-			<that>O ‘NIBUS PEGOU ALGUMA ROTA ALTERNATIVA _</that>
-			<template><srai>N√O SEI</srai></template>
+			<pattern>_ N√ÉO SEI</pattern>
+			<that>O √îNIBUS PEGOU ALGUMA ROTA ALTERNATIVA _</that>
+			<template><srai>N√ÉO SEI</srai></template>
 		</category>
 
 		<category>
@@ -940,31 +945,31 @@
 			<that>COMO ASSIM</that>
 			<template>
 				<think><set name = "rota">Desvio</set></think>
-				Certo, e quais eram as condiÁıes da pista? Haviam buracos, estava molhada, etc?
+				Certo, e quais eram as condi√ß√µes da pista? Haviam buracos, estava molhada, etc?
 			</template>
 		</category>		
 		
 		<category>
-			<pattern>N√O</pattern>
+			<pattern>N√ÉO</pattern>
 			<that>COMO ASSIM</that>
 			<template>
 				<think><set name = "rota">Normal</set></think>
-				Certo, e quais eram as condiÁıes da pista? Haviam buracos, estava molhada, etc?
+				Certo, e quais eram as condi√ß√µes da pista? Haviam buracos, estava molhada, etc?
 			</template>
 		</category>		
 		
 		<category>
-			<pattern>N√O SEI</pattern>
+			<pattern>N√ÉO SEI</pattern>
 			<that>COMO ASSIM</that>
 			<template>
-				Certo, e quais eram as condiÁıes da pista? Haviam buracos, estava molhada, etc?
+				Certo, e quais eram as condi√ß√µes da pista? Haviam buracos, estava molhada, etc?
 			</template>
 		</category>
 
 		<category>
-			<pattern>_ N√O SEI</pattern>
+			<pattern>_ N√ÉO SEI</pattern>
 			<that>COMO ASSIM</that>
-			<template><srai>N√O SEI</srai></template>
+			<template><srai>N√ÉO SEI</srai></template>
 		</category>
 		
 		<category>
@@ -980,128 +985,128 @@
 		</category>							
 
 		<category>
-			<pattern>N√O SEI</pattern>
-			<that>CERTO E QUAIS ERAM AS CONDI«’ES DA PISTA HAVIAM BURACOS ESTAVA MOLHADA ETC</that>
+			<pattern>N√ÉO SEI</pattern>
+			<that>CERTO E QUAIS ERAM AS CONDI√á√ïES DA PISTA HAVIAM BURACOS ESTAVA MOLHADA ETC</that>
 			<template>
-				E como estava a sinalizaÁ„o? Haviam placas e faixas, etc.
+				E como estava a sinaliza√ß√£o? Haviam placas e faixas, etc.
 			</template>
 		</category>
 
 		<category>
-			<pattern>_ N√O SEI</pattern>
-			<that>CERTO E QUAIS ERAM AS CONDI«’ES DA PISTA HAVIAM BURACOS ESTAVA MOLHADA ETC</that>
-			<template><srai>N√O SEI</srai></template>
+			<pattern>_ N√ÉO SEI</pattern>
+			<that>CERTO E QUAIS ERAM AS CONDI√á√ïES DA PISTA HAVIAM BURACOS ESTAVA MOLHADA ETC</that>
+			<template><srai>N√ÉO SEI</srai></template>
 		</category>
 		
 		<category>
 			<pattern>*</pattern>
-			<that>CERTO E QUAIS ERAM AS CONDI«’ES DA PISTA HAVIAM BURACOS ESTAVA MOLHADA ETC</that>
+			<that>CERTO E QUAIS ERAM AS CONDI√á√ïES DA PISTA HAVIAM BURACOS ESTAVA MOLHADA ETC</that>
 			<template>
 				<think><set name = "condicoes"><star/></set></think>
-				E como estava a sinalizaÁ„o? Haviam placas e faixas, etc.
+				E como estava a sinaliza√ß√£o? Haviam placas e faixas, etc.
 			</template>
 		</category>
 
 		<category>
-			<pattern>N√O SEI</pattern>
-			<that>E COMO ESTAVA A SINALIZA«√O HAVIAM PLACAS E FAIXAS ETC</that>
+			<pattern>N√ÉO SEI</pattern>
+			<that>E COMO ESTAVA A SINALIZA√á√ÉO HAVIAM PLACAS E FAIXAS ETC</that>
 			<template>
-				A rodovia È de m„o dupla?
-				#button#Sim;N„o;N„o Sei
+				A rodovia √© de m√£o dupla?
+				#button#Sim;N√£o;N√£o Sei
 			</template>
 		</category>
 
 		<category>
-			<pattern>_ N√O SEI</pattern>
-			<that>E COMO ESTAVA A SINALIZA«√O HAVIAM PLACAS E FAIXAS ETC</that>
-			<template><srai>N√O SEI</srai></template>
+			<pattern>_ N√ÉO SEI</pattern>
+			<that>E COMO ESTAVA A SINALIZA√á√ÉO HAVIAM PLACAS E FAIXAS ETC</that>
+			<template><srai>N√ÉO SEI</srai></template>
 		</category>
 
 		<category>
 			<pattern>*</pattern>
-			<that>E COMO ESTAVA A SINALIZA«√O HAVIAM PLACAS E FAIXAS ETC</that>
+			<that>E COMO ESTAVA A SINALIZA√á√ÉO HAVIAM PLACAS E FAIXAS ETC</that>
 			<template>
 				<think><set name = "sinalizacao"><star/></set></think>
-				A rodovia È de m„o dupla?
-				#button#Sim;N„o;N„o Sei
+				A rodovia √© de m√£o dupla?
+				#button#Sim;N√£o;N√£o Sei
 			</template>
 		</category>
 
 		<category>
 			<pattern>SIM</pattern>
-			<that>A RODOVIA … DE M√O DUPLA _</that>
+			<that>A RODOVIA √â DE M√ÉO DUPLA _</that>
 			<template>
 				<think><set name = "mao_dupla">Sim</set></think>
-				Ok, gostaria de falar sobre outros detalhes que ache importante? Sen„o podemos finalizar.
+				Ok, gostaria de falar sobre outros detalhes que ache importante? Sen√£o podemos finalizar.
 				#button#Sim;Finalizar
 			</template>
 		</category>		
 
 		<category>
-			<pattern>N√O</pattern>
-			<that>A RODOVIA … DE M√O DUPLA _</that>
+			<pattern>N√ÉO</pattern>
+			<that>A RODOVIA √â DE M√ÉO DUPLA _</that>
 			<template>
-				<think><set name = "mao_dupla">N„o</set></think>
-				Ok, gostaria de falar sobre outros detalhes que ache importante? Sen„o podemos finalizar.
+				<think><set name = "mao_dupla">N√£o</set></think>
+				Ok, gostaria de falar sobre outros detalhes que ache importante? Sen√£o podemos finalizar.
 				#button#Sim;Finalizar
 			</template>
 		</category>
 
 		<category>
-			<pattern>N√O SEI</pattern>
-			<that>A RODOVIA … DE M√O DUPLA _</that>
+			<pattern>N√ÉO SEI</pattern>
+			<that>A RODOVIA √â DE M√ÉO DUPLA _</that>
 			<template>
-				Ok, gostaria de falar sobre outros detalhes que ache importante? Sen„o podemos finalizar.
+				Ok, gostaria de falar sobre outros detalhes que ache importante? Sen√£o podemos finalizar.
 				#button#Sim;Finalizar
 			</template>
 		</category>
 		
 		<category>
 			<pattern>SIM</pattern>
-			<that>N√O TE ENTENDI</that>
+			<that>N√ÉO TE ENTENDI</that>
 			<template>
 				<think><set name = "mao_dupla">Sim</set></think>
-				Ok, gostaria de falar sobre outros detalhes que ache importante? Sen„o podemos finalizar.
+				Ok, gostaria de falar sobre outros detalhes que ache importante? Sen√£o podemos finalizar.
 				#button#Sim;Finalizar
 			</template>
 		</category>		
 
 		<category>
-			<pattern>N√O</pattern>
-			<that>N√O TE ENTENDI</that>
+			<pattern>N√ÉO</pattern>
+			<that>N√ÉO TE ENTENDI</that>
 			<template>
-				<think><set name = "mao_dupla">N„o</set></think>
-				Ok, gostaria de falar sobre outros detalhes que ache importante? Sen„o podemos finalizar.
+				<think><set name = "mao_dupla">N√£o</set></think>
+				Ok, gostaria de falar sobre outros detalhes que ache importante? Sen√£o podemos finalizar.
 				#button#Sim;Finalizar
 			</template>
 		</category>
 
 		<category>
-			<pattern>N√O SEI</pattern>
-			<that>N√O TE ENTENDI</that>
+			<pattern>N√ÉO SEI</pattern>
+			<that>N√ÉO TE ENTENDI</that>
 			<template>
-				Ok, gostaria de falar sobre outros detalhes que ache importante? Sen„o podemos finalizar.
+				Ok, gostaria de falar sobre outros detalhes que ache importante? Sen√£o podemos finalizar.
 				#button#Sim;Finalizar
 			</template>
 		</category>
 
 		<category>
 			<pattern>*</pattern>
-			<that>A RODOVIA … DE M√O DUPLA _</that>
-			<template>N„o te entendi</template>
+			<that>A RODOVIA √â DE M√ÉO DUPLA _</that>
+			<template>N√£o te entendi</template>
 		</category>
 		
 		<category>
 			<pattern>*</pattern>
-			<that>N√O TE ENTENDI</that>
-			<template>N„o te entendi</template>
+			<that>N√ÉO TE ENTENDI</that>
+			<template>N√£o te entendi</template>
 		</category>				
 
 	</topic>
 
 	<category>
 		<pattern>FINALIZAR</pattern>
-		<that>OK GOSTARIA DE FALAR SOBRE OUTROS DETALHES QUE ACHE IMPORTANTE SEN√O PODEMOS FINALIZAR _</that>
+		<that>OK GOSTARIA DE FALAR SOBRE OUTROS DETALHES QUE ACHE IMPORTANTE SEN√ÉO PODEMOS FINALIZAR _</that>
 		<template>
 			<think><set name = "topic">fim</set></think>
 			O acidente foi registrado com suceso!
@@ -1110,47 +1115,47 @@
 	
 	<category>
 		<pattern>_ FINALIZAR</pattern>
-		<that>OK GOSTARIA DE FALAR SOBRE OUTROS DETALHES QUE ACHE IMPORTANTE SEN√O PODEMOS FINALIZAR _</that>
+		<that>OK GOSTARIA DE FALAR SOBRE OUTROS DETALHES QUE ACHE IMPORTANTE SEN√ÉO PODEMOS FINALIZAR _</that>
 		<template><srai>FINALIZAR</srai></template>
 	</category>
 
 	<category>
 		<pattern>FINALIZAR _</pattern>
-		<that>OK GOSTARIA DE FALAR SOBRE OUTROS DETALHES QUE ACHE IMPORTANTE SEN√O PODEMOS FINALIZAR _</that>
+		<that>OK GOSTARIA DE FALAR SOBRE OUTROS DETALHES QUE ACHE IMPORTANTE SEN√ÉO PODEMOS FINALIZAR _</that>
 		<template><srai>FINALIZAR</srai></template>
 	</category>
 
 	<category>
 		<pattern>_ FINALIZAR _</pattern>
-		<that>OK GOSTARIA DE FALAR SOBRE OUTROS DETALHES QUE ACHE IMPORTANTE SEN√O PODEMOS FINALIZAR _</that>
+		<that>OK GOSTARIA DE FALAR SOBRE OUTROS DETALHES QUE ACHE IMPORTANTE SEN√ÉO PODEMOS FINALIZAR _</that>
 		<template><srai>FINALIZAR</srai></template>
 	</category>
 
 	<category>
-		<pattern>N√O</pattern>
-		<that>OK GOSTARIA DE FALAR SOBRE OUTROS DETALHES QUE ACHE IMPORTANTE SEN√O PODEMOS FINALIZAR _</that>
+		<pattern>N√ÉO</pattern>
+		<that>OK GOSTARIA DE FALAR SOBRE OUTROS DETALHES QUE ACHE IMPORTANTE SEN√ÉO PODEMOS FINALIZAR _</that>
 		<template><srai>FINALIZAR</srai></template>
 	</category>
 	
 	<category>
 		<pattern>SIM</pattern>
-		<that>OK GOSTARIA DE FALAR SOBRE OUTROS DETALHES QUE ACHE IMPORTANTE SEN√O PODEMOS FINALIZAR _</that>
+		<that>OK GOSTARIA DE FALAR SOBRE OUTROS DETALHES QUE ACHE IMPORTANTE SEN√ÉO PODEMOS FINALIZAR _</that>
 		<template>
-			Certo, o que vocÍ gostaria de deixar registrado?
+			Certo, o que voc√™ gostaria de deixar registrado?
 		</template>
 	</category>
 
 	<category>
 		<pattern>SIM _</pattern>
-		<that>OK GOSTARIA DE FALAR SOBRE OUTROS DETALHER QUE ACHE IMPORTANTE SEN√O PODEMOS FINALIZAR _</that>
+		<that>OK GOSTARIA DE FALAR SOBRE OUTROS DETALHER QUE ACHE IMPORTANTE SEN√ÉO PODEMOS FINALIZAR _</that>
 		<template>
-			Certo, o que vocÍ gostaria de deixar registrado?
+			Certo, o que voc√™ gostaria de deixar registrado?
 		</template>
 	</category>
 
 	<category>
 		<pattern>*</pattern>
-		<that>CERTO O QUE VOC  GOSTARIA DE DEIXAR REGISTRADO</that>
+		<that>CERTO O QUE VOC√ä GOSTARIA DE DEIXAR REGISTRADO</that>
 		<template>
 			<think>
 				<set name = "extra"><star/></set>
@@ -1166,22 +1171,22 @@
 	 	<category>
 			<pattern>MOSTRAR DADOS</pattern>
 			<template>
-				N˙mero de mortos - <get name = "nmortos"/>\n
-				N˙mero de feridos - <get name = "nferidos"/>\n
+				N√∫mero de mortos - <get name = "nmortos"/>\n
+				N√∫mero de feridos - <get name = "nferidos"/>\n
 				Tipo do acidente - <get name = "tipo_acidente"/>\n
-				Empresa do Ùnibus - <get name = "empresa"/>\n
-				Tipo do Ùnibus - <get name = "tipo"/>\n
+				Empresa do √¥nibus - <get name = "empresa"/>\n
+				Tipo do √¥nibus - <get name = "tipo"/>\n
 				Estado - <get name = "estado"/>\n
 				Cidade - <get name = "cidade"/>\n
 				Local - <get name = "local"/>\n
-				CÛdigo da Rodovia - <get name = "codigo"/>\n
+				C√≥digo da Rodovia - <get name = "codigo"/>\n
 				Tipo da Rodovia - <get name = "tipo_rodovia"/>\n
 				Km - <get name = "km"/>\n
 				Pavimentada - <get name = "pavimentada"/>\n
-				SinalizaÁ„o - <get name = "sinalizacao"/>\n
+				Sinaliza√ß√£o - <get name = "sinalizacao"/>\n
 				Rota - <get name = "rota"/>\n
-				CondiÁıes - <get name = "condicoes"/>\n
-				M„o dupla - <get name = "mao_dupla"/>\n
+				Condi√ß√µes - <get name = "condicoes"/>\n
+				M√£o dupla - <get name = "mao_dupla"/>\n
 				Extra - <get name = "extra"/>
 			</template>
 		</category>
@@ -1192,9 +1197,11 @@
     <category>
         <pattern>*</pattern>
             <template><random>
-                <li>Me desculpe, n„o estou entendendo.</li>
+                <li>Me desculpe, n√£o estou entendendo.</li>
                 <li>Poderia ser mais claro?</li>
                 <li>Desculpe, pode repetir por favor?</li>
+		<li>Me ajude a te ajudar!</li>
+		<li>Me ajude a te ajudar a me ajudar a te ajudar!!!</li>
             </random></template>
     </category>
 
